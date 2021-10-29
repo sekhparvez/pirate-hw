@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Rapscallion';
+  src: url('/src/rapscallion-font/Rapscallion-q341.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .pirate {
   max-width: 80vw;
   margin: 2rem auto;
@@ -5,9 +12,11 @@
 
 h2 {
   font-family: "Trade Winds", cursive;
+  color: #F95738;
 }
 
 section {
+  background-color: #235789;
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 1rem;
@@ -16,6 +25,31 @@ section {
   margin-bottom: 1rem;
 }
 
+section h3{
+  color: #F95738;
+}
+
+section ul{
+  border: 2px solid #070707;
+  background-color: #34D1BF;
+  height: 35%;
+}
+
+section li{
+  list-style: square;
+  list-style-image: url(../img/pirate-list.png);
+  
+}
+
 article {
   flex: 1;
+}
+
+article p{
+  font-family: 'Rapscallion';
+  font-size: 2.5rem;
+  color: #F95738;
+}
+img{
+  margin-top: 5px;
 }

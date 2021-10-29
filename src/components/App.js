@@ -15,12 +15,14 @@ function randomize() {
 }
 
 function App() {
+  const [pirates, setPirates] = React.useState(piratesFile);
   return (
     <div>
       <Header title={randomize()} />
       <div className="pirate">
-        {piratesFile.map((pirate) => (
-          <Pirate tagline={randomize()} name = {pirate.name} />
+        {/* we map over the pirates state, not the piratesFile */}
+        {pirates.map((pirate) => (
+          <Pirate key={pirate.name} tagline={randomize()} pirate={pirate} />
         ))}
       </div>
     </div>
