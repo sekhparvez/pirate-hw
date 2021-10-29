@@ -33,11 +33,11 @@ section summary{
 
 section h3{
   font-family: 'Rapscallion','Arial';
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #F95738;
   position: absolute;
   top:120px;
-  left: 25px;
+  left:5px;
 }
 
 section ul{
@@ -51,6 +51,7 @@ section ul{
   justify-self:center;
   position: absolute;
   top: 190px;
+  
 
 }
 
@@ -58,6 +59,7 @@ section li{
   list-style: square;
   list-style-image: url(../img/pirate-list.png);
   list-style-position: outside;
+  margin: 5px;
   
   
   
