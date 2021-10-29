@@ -23,21 +23,43 @@ section {
   padding-bottom: 1rem;
   border-bottom: 1px dotted black;
   margin-bottom: 1rem;
+  height: 50vh;
+  
+}
+
+section summary{
+  position: relative;
 }
 
 section h3{
+  font-family: 'Rapscallion','Arial';
+  font-size: 2rem;
   color: #F95738;
+  position: absolute;
+  top:120px;
+  left: 25px;
 }
 
 section ul{
   border: 2px solid #070707;
   background-color: #34D1BF;
   height: 35%;
+  position:absolute;
+  top:190px;
+  display: flex;
+  flex-direction: column;
+  justify-self:center;
+  position: absolute;
+  top: 190px;
+
 }
 
 section li{
   list-style: square;
   list-style-image: url(../img/pirate-list.png);
+  list-style-position: outside;
+  
+  
   
 }
 

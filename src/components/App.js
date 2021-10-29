@@ -22,7 +22,7 @@ function App() {
       <div className="pirate">
         {/* we map over the pirates state, not the piratesFile */}
         {pirates.map((pirate) => (
-          <Pirate key={pirate.name} tagline={randomize()} pirate={pirate} output = {console.log(setPirates())}/>
+          <Pirate key={pirate.name} tagline={randomize()} pirate={pirate}/>
         ))}
         
       </div>
