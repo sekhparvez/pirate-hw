@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/Pirate.css";
 import avatar from '../assets/img/avatar.png';
 
-function Pirate({pirate: { name, year, weapon, vessel, description },tagline,}) {
+function Pirate({pirate: { name, year, weapon, vessel, description },tagline,remove}) {
     return (
       <section>
       <summary>
@@ -17,6 +17,7 @@ function Pirate({pirate: { name, year, weapon, vessel, description },tagline,}) 
       <article>
         <h2>{tagline}</h2>
         <p>{description}</p>
+        <button onClick={()=> remove(name)}>Remove Pirate</button>
       </article>
     </section>
     );
